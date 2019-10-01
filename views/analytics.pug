@@ -1,0 +1,13 @@
+extends layout
+
+block content
+    table
+        thead
+            tr
+            th Path
+            th Visits
+        tbody
+            each view in views
+                tr
+                    td= view._id.path
+                    td= view.total
